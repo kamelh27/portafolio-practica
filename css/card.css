@@ -1,0 +1,74 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(136, 211, 242), rgb(88, 133, 230));
+  border-radius: 10px;
+  margin-block: 40px;
+  padding-block-start: 24px;
+}
+
+
+
+section.card.element{
+  box-shadow: -2px -2px 0  rgba(250, 250, 250, 0.5), -2px -2px 0px rgba(250, 250, 250, 0.5);
+}
+
+
+.card-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 280px;
+  padding-inline: 24px;
+}
+
+.card-description img{
+  vertical-align: middle;
+  border-radius: 50%;
+  inline-size: 64px;
+  block-size: 64px;
+}
+
+
+.card-description h2{
+  font: var(--body1-bold);
+  text-align: start;
+  color: var(--primary);
+  margin: 0;
+}
+
+.card-description p{ 
+  color: rgba(49, 10, 144, .4);
+  margin: 0;
+  padding-block-end: 24px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding-block-start: 80px;
+  }
+  .card-description{
+    gap: 24px;
+    max-width: 750px;
+    margin: 0;
+    padding-inline: 0;
+  }
+
+  .card-description img {
+    inline-size: 80px;
+    block-size: 80px;
+  }
+
+  .card-description h2 {
+    font: var(--headline4);
+    text-align: center;
+  }
+
+  .card-description p {
+    padding-block-end: 80px;
+  }
+
+}

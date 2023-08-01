@@ -1,0 +1,40 @@
+.comment{
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.comment h2{
+  font: var(--headline5);
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary);
+  margin: 0;
+}
+
+.comment p{
+  color: var(--primary);
+  margin: 0;
+} 
+
+.comment img{
+  inline-size: 40px;
+  block-size: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .comment{
+    margin: 250px auto;
+  }
+  .comment h2{
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+
+
+
+
